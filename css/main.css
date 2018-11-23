@@ -16,3 +16,28 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body {
+  background-color: #e5c30a;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 20em) {
+
+  .section-letter,
+  .section-icon {
+    display: inline-block;
+    flex-direction: row;
+    width: 48%;
+  }
+
+  .section-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
