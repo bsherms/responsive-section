@@ -10,7 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: "Noto Sans", sans-serif;
+  font: normal 100%/1.3 "Noto Sans", sans-serif;
 }
 
 *, *::before, *::after {
@@ -18,7 +18,19 @@ html {
 }
 
 body {
+  margin: 0;
+}
+
+section {
   background-color: #e5c30a;
+}
+
+section h2 {
+  margin-bottom: 0;
+}
+
+section p {
+  margin-top: 0;
 }
 
 .img-flex {
@@ -26,18 +38,80 @@ body {
   width: 100%;
 }
 
+.wrapper {
+  max-width: 45em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media only screen and (min-width: 20em) {
 
   .section-letter,
   .section-icon {
     display: inline-block;
-    flex-direction: row;
     width: 48%;
   }
 
   .section-body {
     display: flex;
     flex-direction: column;
+  }
+
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 100%;
+    line-height: 1.3;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+     font-size: 110%;
+     line-height: 1.4;
+   }
+
+  .wrapper {
+    display: flex;
+  }
+
+  .section-letter {
+    display: inline-block;
+    order: 1;
+    width: 25%;
+  }
+
+  .section-body {
+    display: inline-block;
+    order: 2;
+    width: 48%;
+  }
+
+  .section-icon {
+    display: inline-block;
+    order: 3;
+    width: 25%;
+  }
+
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
   }
 
 }
